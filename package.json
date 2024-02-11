@@ -1,0 +1,23 @@
+{
+  "name": "joyful-childhood-care-website",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/alpinejs": "^0.4.0",
+    "@astrojs/tailwind": "^5.1.0",
+    "alpinejs": "^3.13.5",
+    "astro": "^4.3.5",
+    "astro-icon": "^1.1.0",
+    "tailwindcss": "^3.4.1"
+  },
+  "devDependencies": {
+    "@iconify-json/solar": "^1.1.9"
+  }
+}

@@ -1,0 +1,16 @@
+---
+import Layout from '../layouts/Layout.astro';
+const title = "Joyful Childhood Care Foundation";
+---
+
+<Layout title={title}>
+  <main>
+    <h1 class="title">{title}</h1>
+  </main>
+</Layout>
+
+<style>
+  h1.title {
+    @apply bg-gradient-to-r from-red-500 to-blue-500 bg-clip-text text-transparent;
+  }
+</style>
