@@ -9,11 +9,11 @@ h2 {
   @apply text-2xl font-semibold mt-4 mb-2;
 }
 
-a {
+main > a {
   @apply underline opacity-80 hover:opacity-100;
 }
 
 main {
-  @apply max-w-6xl mx-auto my-8;
+  @apply max-w-6xl mx-auto my-8 p-4;
 }
 

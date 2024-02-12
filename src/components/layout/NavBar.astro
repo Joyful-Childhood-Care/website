@@ -1,0 +1,71 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
+<nav class="bg-rose-900 shadow" x-data="{ open: false }">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="flex h-16 justify-between">
+      
+      <!-- FULL TOOLBAR -->
+      <div class="flex w-full">
+
+        <!-- LOGO -->
+        <div class="flex flex-shrink-0 items-center">
+          <p>Logo</p>
+        </div>
+
+        <!-- TOOLBAR MENU -->
+        <div class="hidden sm:ml-6 sm:flex sm:space-x-8 grow">
+          <a href="#" class="toolbar-item toolbar-item-active">Dashboard</a>
+          <a href="#" class="toolbar-item">Team</a>
+          <a href="#" class="toolbar-item">Projects</a>
+          <a href="#" class="toolbar-item">Calendar</a>
+        </div>
+
+        <!-- DONATE BUTTON -->
+        <div class="hidden sm:ml-6 sm:flex sm:items-center">
+          <button>Donate<button>
+        </div>
+
+      </div>
+
+      
+      <!-- MOBILE MENU TOGGLE -->
+      <div class="-mr-2 flex items-center sm:hidden">
+        <button x-on:click="open = !open" type="button" class="mobile-menu" aria-controls="mobile-menu" aria-expanded="false">
+          <Icon x-bind:class="open ? 'hidden' : ''" name="solar:hamburger-menu-linear" />
+          <Icon x-bind:class="!open ? 'hidden' : ''" name="solar:close-circle-linear" />
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MOBILE MENU -->
+
+  <!-- Mobile menu, show/hide based on menu state. -->
+  <div x-bind:class="!open ? 'hidden' : ''" class="sm:hidden" id="mobile-menu">
+    <div class="space-y-1 pb-3 pt-2">
+      <!-- Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" -->
+      <a href="#" class="block border-l-4 border-indigo-500 bg-indigo-50 py-2 pl-3 pr-4 text-base font-medium text-indigo-700">Dashboard</a>
+      <a href="#" class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700">Team</a>
+      <a href="#" class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700">Projects</a>
+      <a href="#" class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700">Calendar</a>
+    </div>
+    <div class="border-t border-gray-200 pb-3 pt-4">
+      <button>Donate</button>
+    </div>
+  </div>
+</nav>
+
+<style>
+  .toolbar-item {
+    @apply inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-100/80 hover:text-gray-100;
+  }
+  .toolbar-item-active {
+    @apply text-gray-100;
+  }
+
+  .mobile-menu {
+    @apply relative inline-flex items-center justify-center text-2xl p-1 rounded-lg text-gray-100/80 hover:text-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-amber-500
+  }
+</style>
