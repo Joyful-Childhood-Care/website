@@ -1,7 +1,7 @@
 ---
 title: Project 2
 description: Short description of Project 2
-draft: true
+draft: false
 ---
 
 ## Background
