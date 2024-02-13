@@ -1,5 +1,5 @@
 html {
-  @apply bg-gradient-to-b from-gray-100 to-gray-200 min-h-full;
+  @apply bg-gradient-to-b from-gray-50 to-gray-100 min-h-full;
 }
 
 h1 {

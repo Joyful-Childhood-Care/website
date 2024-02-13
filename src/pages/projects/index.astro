@@ -5,7 +5,6 @@ import Layout from '../../layouts/Layout.astro';
 const projects = await getCollection('projects', ({ data }) => {
   return import.meta.env.PROD ? data.draft !== true : true;
 });
-console.log(projects);
 ---
 
 <Layout title="Projects">
