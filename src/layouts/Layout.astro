@@ -17,10 +17,15 @@ const { title } = Astro.props;
     <script is:inline src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
   <body>
-    <NavBar />
-    <main class="mt-20">
-      <slot />
-    </main>
+    <div class="flex flex-col min-h-screen">
+      <NavBar />
+      <main class="w-full grow mt-20 overflow-y">
+        <slot />
+      </main>
+      <div>
+        <p>Footer...</p>
+      </div>
+    </div>
     <script>
       if (window.netlifyIdentity) {
         window.netlifyIdentity.on("init", user => {

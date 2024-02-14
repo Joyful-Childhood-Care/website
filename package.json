@@ -7,7 +7,8 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "cms": "npx @staticcms/proxy-server"
   },
   "dependencies": {
     "@astrojs/alpinejs": "^0.4.0",

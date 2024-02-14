@@ -14,7 +14,7 @@ cms_collections.forEach((c) => {
     let w = f.widget;
     let v;
     if ( w === 'string' ) v = z.string();
-    if ( w === 'datetime' ) v = z.string();
+    if ( w === 'datetime' ) v = z.date();
     if ( w === 'boolean' ) v = z.boolean();
     if ( v && n !== 'body' ) s[n] = v;
   });
