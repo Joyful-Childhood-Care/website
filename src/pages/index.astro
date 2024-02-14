@@ -1,25 +1,27 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { getEntry } from 'astro:content';
 const title = "Joyful Childhood Care Foundation";
+
+const home = await getEntry('pages', 'home');
+const { Content } = await home.render();
 ---
 
 <Layout title={title}>
   <h1 class="title">{title}</h1>
+  <p class="tagline">One line description of the organization</p>
 
-  <h2>Projects</h2>
-  <p><a href="/projects/">All Projects</a></p>
+  <img class="my-20 object-cover w-full h-96 rounded-lg drop-shadow-lg border-2 border-white/50"
+    src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
 
-  <br /><br />
-  <hr />
-  <br /><br />
-
-  {Array.from(Array(100).keys()).map((i) => (
-    <p>Line {i}...</p>
-  ))}
+  <Content />
 </Layout>
 
 <style>
   h1.title {
-    @apply my-12 bg-gradient-to-r from-red-500 to-blue-500 bg-clip-text text-transparent;
+    @apply mt-20 bg-gradient-to-r from-red-500 to-blue-500 bg-clip-text text-transparent;
+  }
+  p.tagline {
+    @apply text-center text-gray-600 text-xl;
   }
 </style>

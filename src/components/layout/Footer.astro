@@ -1,11 +1,16 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
 <div class="w-full bg-gray-200 border-t border-gray-300 py-8 px-8">
   <div class="max-w-4xl mx-auto">
     <p>Copyright &copy; 2024 Joyful Childhood Care Foundation</p>
+    <a href="/admin/index.html"><Icon name="solar:clapperboard-edit-bold" class="inline mr-2" />Admin Panel</a>
   </div>
 </div>
 
 <style>
-  p {
-    @apply text-gray-500 text-center;
+  p, a {
+    @apply text-gray-400 text-center block;
   }
 </style>
