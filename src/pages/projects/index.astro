@@ -1,6 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import Layout from '../../layouts/Layout.astro';
+import ButtonGray from '../../components/UI/Button/Gray.astro';
 
 const projects = await getCollection('projects', ({ data }) => {
   return import.meta.env.PROD ? data.draft !== true : true;
@@ -11,10 +12,12 @@ const projects = await getCollection('projects', ({ data }) => {
   <h1>Projects</h1>
 
   {projects.map((project) => (
-    <div class="my-4">
+    <div class="max-w-3xl mx-auto my-8">
       <h2>{project.data.title}</h2>
       <p>{project.data.description}</p>
-      <p><a href={`/projects/${project.slug}`}>Read More</a></p>
+      <a href={`/projects/${project.slug}`} class="mt-4">
+        <ButtonGray label="Read More" icon="solar:alt-arrow-right-bold" />
+      </a>
     </div>
   ))}
 </Layout>

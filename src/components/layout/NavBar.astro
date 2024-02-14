@@ -1,7 +1,8 @@
 ---
 import { getCollection } from "astro:content";
 import { Icon } from "astro-icon/components";
-import Button from '../UI/Button.astro';
+import ButtonAmber from '../UI/Button/Amber.astro';
+import ButtonGray from '../UI/Button/Gray.astro';
 
 const items = [
   {
@@ -55,9 +56,13 @@ blog = blog.sort((a, b) => b.data.date - a.data.date).slice(0, 4);
       <Icon name="solar:close-circle-linear" class="menu-toggle-button" x-bind:class="!open && 'hidden'" />
     </button>
 
-    <!-- MENU ITEMS -->
-    <div class="md:flex items-center justify-between font-medium w-full md:w-auto md:order-1" x-bind:class="open ? 'flex' : 'hidden'">
-      <ul class="flex flex-col p-4 md:p-0 mt-4 space-y-4 md:space-y-0 md:space-x-4 lg:space-x-8 md:flex-row md:mt-0 md:border-0">
+    <!-- MAIN TOOLBAR -->
+    <div class="grow md:flex flex-col md:flex-row h-screen md:h-fit items-start md:items-center justify-between font-medium w-full md:w-auto md:order-1" x-bind:class="open ? 'flex' : 'hidden'">
+      
+      <!-- MENU ITEMS -->
+      <ul class="text-lg md:text-base items-center w-full flex flex-col md:flex-row p-4 md:p-0 mt-4 space-y-4 md:space-y-0 md:space-x-4 lg:space-x-8 md:mt-0 md:border-0">
+
+        <li class="grow"></li>
 
         {items.map((item) => (
           <li x-bind:class={`!${item.path} && 'hidden'`}>
@@ -72,15 +77,18 @@ blog = blog.sort((a, b) => b.data.date - a.data.date).slice(0, 4);
           </li>
         ))}
 
+        <li class="grow"></li>
+
+        <li>
+          <a href="/donate">
+            <ButtonAmber label="DONATE" icon="solar:dollar-minimalistic-bold" />
+          </a>
+        </li>
+
       </ul>
+
     </div>
 
-    <!-- DONATE BUTTON -->
-    <div class="md:block md:order-2 ml-4 mt-4 md:ml-0 md:mt-0" x-bind:class="open ? 'block' : 'hidden'">
-      <a href="/donate">
-        <Button label="DONATE" icon="solar:dollar-minimalistic-bold" color="amber-800" />
-      </a>
-    </div>
   </div>
 
   <!-- DROPDOWN MENU -->
@@ -115,7 +123,9 @@ blog = blog.sort((a, b) => b.data.date - a.data.date).slice(0, 4);
         ))}
       </div>
       <div class="max-w-4xl mx-auto flex justify-end">
-        <a href="/blog" class="text-gray-600 hover:text-gray-700 px-4 py-2 mb-8 mr-8 bg-gray-100 hover:bg-gray-200 rounded-sm">See All Posts...</a>
+        <a href="/blog" class="my-4 mr-4">
+          <ButtonGray label="More Posts" icon="solar:alt-arrow-right-bold" />
+        </a>
       </div>
     </div>
 
