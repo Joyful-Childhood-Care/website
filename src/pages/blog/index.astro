@@ -24,7 +24,7 @@ blog.sort((a, b) => b.data.date - a.data.date);
         <Icon name="solar:user-rounded-bold" />
         <p class="font-semibold">{b.data.author}</p>
       </div>
-      <p>{b.data.description}</p>
+      <p class="mb-4">{b.data.description}</p>
       <a href={`/blog/${b.slug}`}>
         <ButtonGray label="Read More" icon="solar:alt-arrow-right-bold" />
       </a>

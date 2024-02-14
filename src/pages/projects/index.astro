@@ -14,7 +14,7 @@ const projects = await getCollection('projects', ({ data }) => {
   {projects.map((project) => (
     <div class="max-w-3xl mx-auto my-8">
       <h2>{project.data.title}</h2>
-      <p>{project.data.description}</p>
+      <p class="mb-4">{project.data.description}</p>
       <a href={`/projects/${project.slug}`} class="mt-4">
         <ButtonGray label="Read More" icon="solar:alt-arrow-right-bold" />
       </a>
