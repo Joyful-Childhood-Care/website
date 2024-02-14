@@ -20,6 +20,9 @@ main {
   @apply max-w-6xl mx-auto my-8 p-4;
 }
 main p {
+  @apply m-0;
+}
+main div.content p {
   @apply mb-4;
 }
 main ul {
