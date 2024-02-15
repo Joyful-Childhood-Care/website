@@ -12,12 +12,11 @@ h3 {
   @apply text-lg md:text-xl font-semibold border-b border-gray-400/50;
 }
 
-main > a {
-  @apply underline opacity-80 hover:opacity-100;
-}
-
 main {
   @apply max-w-6xl mx-auto my-8 p-4;
+}
+main a {
+  @apply underline opacity-80 hover:opacity-100;
 }
 main p {
   @apply m-0;
@@ -27,4 +26,24 @@ main div.content p {
 }
 main ul {
   @apply list-disc ml-8 my-4;
+}
+
+label {
+  @apply font-semibold text-gray-800/90;
+}
+input, textarea {
+  @apply w-full bg-gray-200 border border-gray-400 rounded-md p-2;
+}
+
+.btn {
+  @apply cursor-pointer inline-flex items-center gap-x-1 px-4 py-2 rounded-sm no-underline font-semibold;
+}
+.btn-amber {
+  @apply  bg-amber-500/90 hover:bg-amber-500 text-gray-900/90 hover:text-gray-900;
+}
+.btn-gray {
+  @apply bg-gray-200/90 hover:bg-gray-200 text-gray-800/90 hover:text-gray-800;
+}
+.btn svg {
+  @apply text-2xl;
 }

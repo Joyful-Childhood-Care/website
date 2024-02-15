@@ -1,9 +1,0 @@
----
-import { Icon } from "astro-icon/components";
-const { label, icon } = Astro.props;
----
-
-<span class={`cursor-pointer inline-flex items-center gap-x-2 px-4 py-2 rounded-sm`}>
-  {icon && <Icon name={icon} class="text-2xl" />}
-  {label && <p>{label}</p>}
-</span>

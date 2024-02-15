@@ -2,7 +2,6 @@
 import { getCollection } from "astro:content";
 import { Icon } from "astro-icon/components";
 import Layout from '../../layouts/Layout.astro';
-import ButtonGray from '../../components/UI/Button/Gray.astro';
 
 let blog = await getCollection('blog', ({ data }) => {
   return import.meta.env.PROD ? data.draft !== true : true;
@@ -25,8 +24,9 @@ blog.sort((a, b) => b.data.date - a.data.date);
         <p class="font-semibold">{b.data.author}</p>
       </div>
       <p class="mb-4">{b.data.description}</p>
-      <a href={`/blog/${b.slug}`}>
-        <ButtonGray label="Read More" icon="solar:alt-arrow-right-bold" />
+      <a href={`/blog/${b.slug}`} class="btn btn-gray">
+        <p>Read More</p>
+        <Icon name="solar:alt-arrow-right-bold" />
       </a>
     </div>
   ))}

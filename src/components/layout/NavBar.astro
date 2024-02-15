@@ -1,8 +1,6 @@
 ---
 import { getCollection } from "astro:content";
 import { Icon } from "astro-icon/components";
-import ButtonAmber from '../UI/Button/Amber.astro';
-import ButtonGray from '../UI/Button/Gray.astro';
 
 const items = [
   {
@@ -83,8 +81,9 @@ blog = blog.sort((a, b) => b.data.date - a.data.date).slice(0, 4);
         <li class="grow"></li>
 
         <li>
-          <a href="/donate">
-            <ButtonAmber label="DONATE" icon="solar:dollar-minimalistic-bold" />
+          <a href="/donate" class="btn btn-amber">
+            <Icon name="solar:dollar-minimalistic-bold" />
+            <p>DONATE</p>
           </a>
         </li>
 
@@ -126,8 +125,9 @@ blog = blog.sort((a, b) => b.data.date - a.data.date).slice(0, 4);
         ))}
       </div>
       <div class="max-w-4xl mx-auto flex justify-end">
-        <a href="/blog" class="my-4 mr-4">
-          <ButtonGray label="More Posts" icon="solar:alt-arrow-right-bold" />
+        <a href="/blog" class="my-4 mr-4 btn btn-gray">
+          <p>More Posts</p>
+          <Icon name="solar:alt-arrow-right-bold" />
         </a>
       </div>
     </div>
