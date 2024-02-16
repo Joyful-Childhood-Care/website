@@ -27,6 +27,9 @@ main div.content p {
 main ul {
   @apply list-disc ml-8 my-4;
 }
+main ol {
+  @apply list-decimal ml-8 my-4;
+}
 
 label {
   @apply font-semibold text-gray-800/90;
@@ -36,7 +39,7 @@ input, textarea {
 }
 
 .btn {
-  @apply cursor-pointer inline-flex items-center gap-x-1 px-4 py-2 rounded-sm no-underline font-semibold;
+  @apply cursor-pointer inline-flex items-center gap-x-1 px-4 py-2 rounded-sm no-underline font-semibold text-center;
 }
 .btn-amber {
   @apply  bg-amber-500/90 hover:bg-amber-500 text-gray-900/90 hover:text-gray-900;
