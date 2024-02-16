@@ -13,6 +13,6 @@ It can contain multiple paragrahs and full markdown support.
 
 This is another section with more information.
 
-
+Welcome to Joyful Childhood Care Foundation!
 
 
