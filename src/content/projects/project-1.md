@@ -1,5 +1,5 @@
 ---
-title: Project 1
+title: Back to school
 description: Short description of Project 1
 draft: false
 ---
