@@ -1,9 +1,12 @@
 ---
 title: Home
 ---
+## Aims & Objectives
 
-A longer description of the organization for the home page.
+1. Provide basic needs such as food, health care and clothing for poor orphans and fatherless
+1. Train and empower indigent young adults
+1. To provide education for the less privileged
 
-More details about how the organization started and its main goals.
 
-A description of the work done so far.
+
+
