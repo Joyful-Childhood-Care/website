@@ -1,5 +1,5 @@
 ---
-title: Project 2
+title: Medical Outreach
 description: Short description of Project 2
 draft: false
 ---
