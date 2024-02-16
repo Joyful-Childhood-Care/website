@@ -1,13 +1,13 @@
 ---
 title: Back to school
-description: Short description of Project 1
+description: The aim of this project is to send orphaned school drop-outs back to school.
 draft: false
 ---
-
 ## Background
 
-How did this project start?
+1. Pay the school fees of orphaned children from primary to secondary 
+1.  Provide school kits (school bags, shoes, uniforms and books)
 
 ## Goals
 
-What are the goals of this project?
+To ensure that evry child gets educated to at least secondary school level.
