@@ -16,7 +16,7 @@ title: Contact Us
   </p>
   <p>
     <label>Message:</label><br />
-    <textarea name="message"></textarea>
+    <textarea name="message" rows="4"></textarea>
   </p>
   <button class="btn btn-amber" type="submit">Send</button>
 </form>
@@ -26,5 +26,5 @@ title: Contact Us
 ## Contact Email
 
 <p>
-  You can also email any questions to <a href='mailto:joyfulchildhoodcare@gmail.com'>joyfulchildhoodcare@gmail.com</a>.
+  You can also email any questions to <a href='mailto:joyfulchildhoodcare@gmail.com?subject=[Contact] Website Contact'>joyfulchildhoodcare@gmail.com</a>.
 </p>

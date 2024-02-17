@@ -40,8 +40,8 @@ let blog = await getCollection('blog', ({ data }) => {
 blog = blog.sort((a, b) => b.data.date - a.data.date).slice(0, 4);
 ---
 
-<nav class="fixed top-0 left-0 z-40 w-full h-18 bg-gray-800 border-gray-200 dark:border-gray-600 dark:bg-gray-900" x-data="{ open: false, submenu: false, submenuItem: false }" x-on:click.outside="open=false; submenu = false">
-  <div class="flex justify-between items-center mx-auto max-w-screen-xl p-4" x-bind:class="open ? 'flex-wrap' : 'flex-nowrap'">
+<nav class="fixed top-0 left-0 z-40 w-full bg-gray-800 border-gray-200 dark:border-gray-600 dark:bg-gray-900" x-data="{ open: false, submenu: false, submenuItem: false }" x-on:click.outside="open=false; submenu = false">
+  <div class="flex justify-between items-center mx-auto max-w-screen-lg p-1 md:py-2 md:px-4" x-bind:class="open ? 'flex-wrap' : 'flex-nowrap'">
       
     <!-- LOGO -->
     <a href="/">
@@ -94,7 +94,7 @@ blog = blog.sort((a, b) => b.data.date - a.data.date).slice(0, 4);
   </div>
 
   <!-- DROPDOWN MENU -->
-  <div x-show="submenu" class="fixed left-0 top-20 z-50 w-full h-full md:h-fit border-gray-200 shadow-md bg-white border-y">
+  <div x-show="submenu" class="fixed left-0 top-12 md:top-16 z-50 w-full h-full md:h-fit border-gray-200 shadow-md bg-white border-y">
 
     <!-- Projects Submenu -->
     <div x-show="submenuItem === 'projects'" class="submenu-grid md:grid-cols-3">
