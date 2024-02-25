@@ -12,6 +12,29 @@
     ]
   },
   {
+    "name": "positions",
+    "label": "Positions",
+    "folder": "src/content/positions",
+    "create": true,
+    "fields": [
+      { "label": "Title", "name": "title", "widget": "string" },
+      { "label": "Type", "name": "type", "widget": "select", "options": ["Job", "Volunteer"] },
+      { "label": "Active", "name": "active", "widget": "boolean" },
+      { "label": "Email", "name": "email", "widget": "string" },
+      { "label": "Description", "name": "body", "widget": "markdown" }
+    ]
+  },
+  {
+    "name": "pages",
+    "label": "Pages",
+    "folder": "src/content/pages",
+    "create": true,
+    "fields": [
+      { "label": "Title", "name": "title", "widget": "string" },
+      { "label": "Body", "name": "body", "widget": "markdown" }
+    ]
+  },
+  {
     "name": "blog",
     "label": "Blog",
     "folder": "src/content/blog",
@@ -22,16 +45,6 @@
       { "label": "Date", "name": "date", "widget": "datetime" },
       { "label": "Description", "name": "description", "widget": "string" },
       { "label": "Draft", "name": "draft", "widget": "boolean" },
-      { "label": "Body", "name": "body", "widget": "markdown" }
-    ]
-  },
-  {
-    "name": "pages",
-    "label": "Pages",
-    "folder": "src/content/pages",
-    "create": true,
-    "fields": [
-      { "label": "Title", "name": "title", "widget": "string" },
       { "label": "Body", "name": "body", "widget": "markdown" }
     ]
   }

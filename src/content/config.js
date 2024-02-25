@@ -16,6 +16,7 @@ cms_collections.forEach((c) => {
     if ( w === 'string' ) v = z.string();
     if ( w === 'datetime' ) v = z.date();
     if ( w === 'boolean' ) v = z.boolean();
+    if ( w === 'select' ) v = z.string();
     if ( v && n !== 'body' ) s[n] = v;
   });
 
