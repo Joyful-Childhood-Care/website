@@ -1,0 +1,37 @@
+---
+import { getCollection } from 'astro:content';
+
+const projects = await getCollection('projects', ({ data }) => {
+  return import.meta.env.PROD ? data.draft !== true : true;
+});
+---
+
+<div class="my-20 p-4 w-full max-w-4xl mx-auto">
+  <h1 class="home-header">What We Do</h1>
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-2 lg:gap-4">
+    {projects.map((p) => (
+      <div class="project">
+        <a href={`/projects/${p.slug}`}>
+          <p class='title'>{p.data.title}</p>
+          <p class='description'>{p.data.description}</p>
+        </a>
+      </div>
+    ))}
+  </div>
+</div>
+
+
+<style>
+  .project {
+    @apply bg-gray-200/40 border hover:bg-gray-200/80 border-gray-300/40 p-4 rounded-md;
+  }
+  .project a {
+    @apply no-underline;
+  }
+  .title {
+    @apply text-rose-800 font-semibold;
+  }
+  .description {
+    @apply text-gray-800/60;
+  }
+</style>

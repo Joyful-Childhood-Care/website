@@ -2,6 +2,7 @@
   {
     "name": "projects",
     "label": "Projects",
+    "label_singular": "Project",
     "folder": "src/content/projects",
     "create": true,
     "fields": [
@@ -14,6 +15,7 @@
   {
     "name": "positions",
     "label": "Positions",
+    "label_singular": "Position",
     "folder": "src/content/positions",
     "create": true,
     "fields": [
@@ -27,6 +29,7 @@
   {
     "name": "pages",
     "label": "Pages",
+    "label_singular": "Page",
     "folder": "src/content/pages",
     "create": true,
     "fields": [
@@ -37,6 +40,7 @@
   {
     "name": "blog",
     "label": "Blog",
+    "label_singular": "Blog Post",
     "folder": "src/content/blog",
     "create": true,
     "fields": [
@@ -46,6 +50,20 @@
       { "label": "Description", "name": "description", "widget": "string" },
       { "label": "Draft", "name": "draft", "widget": "boolean" },
       { "label": "Body", "name": "body", "widget": "markdown" }
+    ]
+  },
+  {
+    "name": "settings",
+    "label": "Settings",
+    "label_singular": "Setting",
+    "create": true,
+    "preview": false,
+    "extension": "json",
+    "format": "json",
+    "folder": "src/content/settings",
+    "fields": [
+      { "label": "Title", "name": "title", "widget": "string" },
+      { "label": "Value", "name": "value", "widget": "string" }
     ]
   }
 ]

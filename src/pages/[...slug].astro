@@ -17,8 +17,10 @@ const { Content } = await page.render();
 ---
 
 <Layout title={page.data.title}>
-  <h1>{page.data.title}</h1>
-  <div class="content">
-    <Content />
+  <div class="page">
+    <h1>{page.data.title}</h1>
+    <div class="content">
+      <Content />
+    </div>
   </div>
 </Layout>

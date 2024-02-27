@@ -2,7 +2,4 @@
 title: Get Involved
 ---
 
-Add ways that people can get involved
-
-- Volunteering
-- Donating
+Some more details about ways people can get involved.  What are some common ongoing volunteer opportunities?

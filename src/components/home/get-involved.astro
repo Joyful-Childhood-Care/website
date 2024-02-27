@@ -1,0 +1,20 @@
+---
+import { getCollection } from "astro:content";
+import Positions from '../positions/list.astro';
+
+const jobs = await getCollection('positions', ({ data }) => {
+  return data.active === true  && data.type.toLowerCase() === 'job';
+});
+const vols = await getCollection('positions', ({ data }) => {
+  return data.active === true  && data.type.toLowerCase() === 'volunteer';
+});
+---
+
+<div class="mt-12 mb-20 p-4 w-full max-w-4xl mx-auto">
+  <h1 class="home-header">Get Involved</h1>
+  <p>
+    If you're interested in the work done by our organization, 
+    <a href="/get-involved">learn how you can get involved</a>.
+  </p>
+  <Positions />
+</div>

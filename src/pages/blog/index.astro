@@ -10,24 +10,26 @@ blog.sort((a, b) => b.data.date - a.data.date);
 ---
 
 <Layout title="Blog">
-  <h1>Blog</h1>
+  <div class="page">
+    <h1>Blog</h1>
 
-  {blog.map((b) => (
-    <div class="max-w-3xl mx-auto my-8">
-      <h2>{b.data.title}</h2>
-      <div class="flex items-center gap-x-2">
-        <Icon name="solar:calendar-minimalistic-bold" />
-        <p class="font-semibold">{new Date(b.data.date).toDateString()}</p>
+    {blog.map((b) => (
+      <div class="max-w-3xl mx-auto my-8">
+        <h2>{b.data.title}</h2>
+        <div class="flex items-center gap-x-2">
+          <Icon name="solar:calendar-minimalistic-bold" />
+          <p class="font-semibold">{new Date(b.data.date).toDateString()}</p>
+        </div>
+        <div class="flex items-center gap-x-2">
+          <Icon name="solar:user-rounded-bold" />
+          <p class="font-semibold">{b.data.author}</p>
+        </div>
+        <p class="mb-4">{b.data.description}</p>
+        <a href={`/blog/${b.slug}`} class="btn btn-gray">
+          <p>Read More</p>
+          <Icon name="solar:alt-arrow-right-bold" />
+        </a>
       </div>
-      <div class="flex items-center gap-x-2">
-        <Icon name="solar:user-rounded-bold" />
-        <p class="font-semibold">{b.data.author}</p>
-      </div>
-      <p class="mb-4">{b.data.description}</p>
-      <a href={`/blog/${b.slug}`} class="btn btn-gray">
-        <p>Read More</p>
-        <Icon name="solar:alt-arrow-right-bold" />
-      </a>
-    </div>
-  ))}
+    ))}
+  </div>
 </Layout>

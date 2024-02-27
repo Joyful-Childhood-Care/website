@@ -22,7 +22,7 @@ cms_collections.forEach((c) => {
 
   // Define the Astro collection
   rtn[c.name] = defineCollection({
-    type: 'content',
+    type: !!c.file || c.format === 'json' ? 'data' : 'content',
     schema: z.object(s)
   });
 

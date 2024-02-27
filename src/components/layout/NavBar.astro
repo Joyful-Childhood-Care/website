@@ -1,5 +1,5 @@
 ---
-import { getCollection } from "astro:content";
+import { getCollection, getEntry } from "astro:content";
 import { Icon } from "astro-icon/components";
 
 const items = [
@@ -38,6 +38,8 @@ let blog = await getCollection('blog', ({ data }) => {
 
 // Get the 4 most-recent blog posts
 blog = blog.sort((a, b) => b.data.date - a.data.date).slice(0, 4);
+
+const { data: { value:title } } = await getEntry('settings', 'organization-name');
 ---
 
 <nav class="fixed top-0 left-0 z-40 w-full bg-gray-800 border-gray-200 dark:border-gray-600 dark:bg-gray-900" x-data="{ open: false, submenu: false, submenuItem: false }" x-on:click.outside="open=false; submenu = false">
@@ -49,7 +51,7 @@ blog = blog.sort((a, b) => b.data.date - a.data.date).slice(0, 4);
     </a>
 
     <!-- MOBILE TITLE -->
-    <p class="text-gray-200 font-semibold block md:hidden order-0" x-bind:class="open && 'hidden'">Joyful Childhood Care Foundation</p>
+    <p class="text-gray-200 font-semibold block md:hidden order-0" x-bind:class="open && 'hidden'">{title}</p>
 
     <!-- MOBILE MENU TOGGLE -->
     <button type="button" class="inline-flex items-center p-1 w-10 h-10 justify-center md:hidden rounded-lg" x-on:click="open = !open; submenu = false">
@@ -146,13 +148,13 @@ blog = blog.sort((a, b) => b.data.date - a.data.date).slice(0, 4);
     @apply grid gap-4 sm:grid-cols-2 max-w-4xl px-4 py-5 mx-auto text-gray-900;
   }
   .submenu-grid span {
-    @apply block cursor-pointer hover:bg-gray-200 border border-transparent hover:border-gray-200 rounded-lg py-2 px-4;
+    @apply block cursor-pointer h-full bg-gray-200/30 hover:bg-gray-200/80 border border-gray-300/40 rounded-lg py-2 px-4;
   }
   .submenu-title {
     @apply text-rose-800 font-semibold text-center;
   }
   .submenu-subtitle {
-    @apply text-gray-800 font-semibold whitespace-nowrap;
+    @apply text-gray-700/80 font-semibold whitespace-nowrap;
   }
   .submenu-description {
     @apply text-gray-800/60;

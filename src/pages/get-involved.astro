@@ -1,0 +1,18 @@
+---
+import { getEntry, getCollection } from 'astro:content';
+import Layout from '../layouts/Layout.astro';
+import Positions from '../components/positions/list.astro';
+
+const page = await getEntry('pages', 'get-involved');
+const { Content } = await page.render();
+---
+
+<Layout title={page.data.title}>
+  <div class="page">
+    <h1>{page.data.title}</h1>
+    <div class="content">
+      <Content />
+    </div>
+    <Positions />
+  </div>
+</Layout>
