@@ -28,12 +28,12 @@ const vols = await getCollection('positions', ({ data }) => {
 
 <style scoped>
   div.positions {
-    @apply m-8 px-4 border-2 border-gray-200 bg-gray-200/20 bg-gradient-to-b from-gray-100 to-gray-200/50 rounded-md shadow-inner;
-  }
-  div.job-section {
     @apply m-0;
   }
+  div.job-section {
+    @apply my-8;
+  }
   div.job-section h2 {
-    @apply mt-8 px-2 text-rose-800 border-b-2 border-rose-800/10 w-fit opacity-90;
+    @apply mt-4 md:mt-8 px-2 text-rose-800 border-b-2 border-rose-800/10 w-fit opacity-90;
   }
 </style>
