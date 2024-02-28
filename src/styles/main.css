@@ -23,7 +23,7 @@ main p {
   @apply m-0;
 }
 main div.page {
-  @apply w-full max-w-4xl mx-auto grow mt-20 h-full;
+  @apply w-full max-w-4xl mx-auto grow mt-12 h-full;
 }
 main div.content {
   @apply px-4;

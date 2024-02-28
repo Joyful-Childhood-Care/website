@@ -17,6 +17,7 @@ const vols = await getCollection('positions', ({ data }) => {
       <Position id={job.slug} />
     ))}
   </div>
+  <div class={`h-2 ${vols.length === 0 || jobs.length === 0 && 'hidden'}`}></div>
   <div class={`job-section ${vols.length === 0 && 'hidden'}`}>
     <h2>Current Volunteer Opportunities</h2>
     {vols.map((vol) => (
@@ -34,6 +35,6 @@ const vols = await getCollection('positions', ({ data }) => {
     @apply my-8;
   }
   div.job-section h2 {
-    @apply mt-4 md:mt-8 px-2 text-rose-800 border-b-2 border-rose-800/10 w-fit opacity-90;
+    @apply -mt-2 px-2 text-rose-800 border-b-2 border-rose-800/10 w-fit opacity-90;
   }
 </style>
