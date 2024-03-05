@@ -1,7 +1,7 @@
 ---
 title: Medical Outreach
 description: Short description of Project 2
-draft: false
+draft: true
 ---
 
 ## Background
