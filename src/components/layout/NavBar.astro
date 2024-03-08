@@ -43,11 +43,11 @@ const { data: { value:title } } = await getEntry('settings', 'organization-name'
 ---
 
 <nav class="fixed top-0 left-0 z-40 w-full bg-green-800 border-gray-200 bg-gradient-to-b from-lime-700/50 to-green-800" x-data="{ open: false, submenu: false, submenuItem: false }" x-on:click.outside="open=false; submenu = false">
-  <div class="flex justify-between items-center mx-auto max-w-screen-lg p-1 md:py-2 md:px-4" x-bind:class="open ? 'flex-wrap' : 'flex-nowrap'">
+  <div class="flex justify-between items-center mx-auto max-w-screen-lg p-1 py-2 px-2 md:px-4" x-bind:class="open ? 'flex-wrap' : 'flex-nowrap'">
       
     <!-- LOGO -->
     <a href="/">
-      <img src="/images/logo.jpg" class="w-8 h-8 md:w-12 md:h-12 rounded-full" alt="Flowbite Logo" />
+      <img src="/images/logo-color.svg" class="w-12 h-12 bg-white rounded-full shadow-md" />
     </a>
 
     <!-- MOBILE TITLE -->
