@@ -68,10 +68,10 @@ const { data: { value:title } } = await getEntry('settings', 'organization-name'
         <li class="grow"></li>
 
         {items.map((item) => (
-          <li x-bind:class={`!${item.path} && 'hidden'`}>
+          <li x-bind:class={`${!item.path} && 'hidden'`}>
             <a href={item.path} class="toolbar-item">{item.title}</a>
           </li>
-          <li x-bind:class={`!${item.menu} && 'hidden'`}>
+          <li x-bind:class={`${!item.menu} && 'hidden'`}>
             <button class="flex items-center toolbar-item" x-on:click={`submenu = submenu && submenuItem === '${item.menu}' ? false : true; submenuItem = '${item.menu}'`}>
               {item.title}
               <Icon x-show={`submenu && submenuItem === '${item.menu}'`} name="solar:alt-arrow-up-bold" />
