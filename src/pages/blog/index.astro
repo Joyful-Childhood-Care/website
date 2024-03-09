@@ -25,10 +25,12 @@ blog.sort((a, b) => b.data.date - a.data.date);
           <p class="font-semibold">{b.data.author}</p>
         </div>
         <p class="mt-2 mb-4">{b.data.description}</p>
-        <a href={`/blog/${b.slug}`} class="btn btn-amber">
-          <p>Read More</p>
-          <Icon name="solar:alt-arrow-right-bold" />
-        </a>
+        <div class="text-right">
+          <a href={`/blog/${b.slug}`} class="btn btn-amber">
+            <p>Read More</p>
+            <Icon name="solar:alt-arrow-right-bold" />
+          </a>
+        </div>
       </div>
     ))}
   </div>

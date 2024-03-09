@@ -1,0 +1,57 @@
+---
+import { getCollection } from "astro:content";
+import { Icon } from "astro-icon/components";
+
+let posts = await getCollection('blog', ({ data }) => {
+  return import.meta.env.PROD ? data.draft !== true : true;
+});
+posts = posts.sort((a, b) => b.data.date - a.data.date).slice(0, 4);
+---
+
+<div class="w-full -mb-20 pb-20 bg-gradient-to-b from-gray-200 to-gray-300/50 border-t border-gray-400/50">
+  <div class="w-full max-w-4xl mx-auto p-4">
+    <h1 class="home-header">Recent News</h1>
+    <div class="grid md:grid-cols-2 gap-2 lg:gap-4">
+      {posts.map((p) => (
+        <div class="post">
+          <a href={`/blog/${p.slug}`}>
+            <h2 class='title'>{p.data.title}</h2>
+            <div class="flex items-center gap-x-2 opacity-70">
+              <Icon name="solar:calendar-minimalistic-bold" />
+              <p class="subtitle">{new Date(p.data.date).toDateString()}</p>
+            </div>
+            <div class="flex items-center gap-x-2 opacity-70">
+              <Icon name="solar:user-rounded-bold" />
+              <p class="subtitle">{p.data.author}</p>
+            </div>
+            <p class='description'>{p.data.description}</p>
+          </a>
+        </div>
+      ))}
+    </div>
+    <div class="flex justify-end mt-8">
+      <a href="/blog" class="my-4 mr-4 btn btn-gray">
+        <p>More Posts</p>
+        <Icon name="solar:alt-arrow-right-bold" />
+      </a>
+    </div>
+  </div>
+</div>
+
+<style>
+  .post {
+    @apply bg-gray-100/80 hover:bg-gray-100/90 border-2 border-green-800/10 hover:border-green-800/20 p-4 rounded-md drop-shadow-lg hover:drop-shadow-md;
+  }
+  .post a {
+    @apply no-underline;
+  }
+  .title {
+    @apply text-rose-800 mt-0;
+  }
+  .subtitle {
+    @apply font-semibold;
+  }
+  .description {
+    @apply text-gray-800/60 mt-2;
+  }
+</style>

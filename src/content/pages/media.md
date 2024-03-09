@@ -2,4 +2,4 @@
 title: Media
 ---
 
-Gallery with images and/or videos
+Check back later for photos and videos of some of our projects!
