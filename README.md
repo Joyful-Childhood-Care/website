@@ -1,18 +1,13 @@
-# Astro Starter Kit: Basics
+# Joyful Childhood Care Foundation Website
 
-```sh
-npm create astro@latest -- --template basics
-```
+The website for the Joyful Childhood Care Foundation (https://joyfulchildhoodcare.org) built using [Astro](https://astro.build/) using 
+[AlpineJS](https://alpinejs.dev/) and [TailwindCSS](https://tailwindcss.com/).  The website uses the [StaticCMS](https://www.staticcms.org/)
+built-in, serverless Content Management System that works directly on the static files (markdown, json) in this git repository (`/src/content/` directory).
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+![image](https://github.com/Joyful-Childhood-Care/website/assets/7526014/81cb2696-34c3-489c-8f4b-8e7eefaaf14f)
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
-
-## 🚀 Project Structure
+## Project Structure
 
 Inside of your Astro project, you'll see the following folders and files:
 
@@ -20,23 +15,25 @@ Inside of your Astro project, you'll see the following folders and files:
 /
 ├── public/
 │   └── favicon.svg
+│   ├── admin/
+│   |    |── index.html (StaticCMS page)
+│   |    └── collections.json (StaticCMS collection definitions, symlinked from ../../collections.json)
+│   └── ... other static resources that are served as-is
 ├── src/
 │   ├── components/
-│   │   └── Card.astro
+│   |   └── ... Astro components used throughout the website
+│   ├── content/
+│   |   |── config.js (Astro content config, derived from ../../collections.json)
+│   │   └── ... Content files (markdown and json) used to define content in pages, projects, job positions, etc
 │   ├── layouts/
-│   │   └── Layout.astro
+│   │   └── ... Astro layouts
 │   └── pages/
-│       └── index.astro
+│       └── ... Astro pages
+├── collections.json (Content collection definitions, used by StaticCMS and Astro ./src/content/config.js)
 └── package.json
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
+## Commands
 
 All commands are run from the root of the project, from a terminal:
 
@@ -49,6 +46,8 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-## 👀 Want to learn more?
+## Building & Deploying
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+To build the site, run the `npm run build` command and the deploy the generated `./dist/` directory.  The site will need to be 
+rebuilt after adding and/or updating any content.  Currently, the site is hosted by Netlify and is automatically rebuilt when 
+changes are committed to the `main` branch in this repository.
