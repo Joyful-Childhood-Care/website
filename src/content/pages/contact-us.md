@@ -1,7 +1,6 @@
 ---
 title: Contact Us
 ---
-
 ## Contact Form
 
 <form name="contact" method="POST" data-netlify="true">
@@ -26,5 +25,5 @@ title: Contact Us
 ## Contact Email
 
 <p>
-  You can also email any questions to <a href='mailto:joyfulchildhoodcare@gmail.com?subject=[Contact] Website Contact'>joyfulchildhoodcare@gmail.com</a>.
+  You can also email any questions to <a href='mailto:joyfulchildhoodcare@gmail.com?subject=[Contact] Website Contact'>joyfulchildhoodcare@gmail.com</a> or <a href='mailto:info@joyfulchildhoodcare.org?subject=[Contact] Website Contact'>info@joyfulchildhoodcare.org</a>.
 </p>
