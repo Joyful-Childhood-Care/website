@@ -27,25 +27,24 @@ recent_posts = recent_posts.sort((a, b) => b.data.date - a.data.date).slice(0, 3
   <div class="page">
     <h1>{blog.data.title}</h1>
     <div class="flex flex-col md:flex-row mt-8">
-      <div class="content grow">
+      <div class="content grow mt-4">
         <Content />
       </div>
-      <div class="p-4 mx-4 mt-8 md:mt-0 md:w-full md:min-w-48 md:max-w-60 rounded-md shadow-md bg-amber-900/10 border border-amber-700">
-        <h3 class="border-amber-700/20 mt-0 text-rose-800">Recent Posts</h3>
+      <div class="mx-4 md:w-full md:min-w-48 md:max-w-72">
+        <h2 class="home-header">Recent Posts</h2>
         {recent_posts.map((post) => (
           <div class='recent-post'>
-            <p class='recent-post-title'>{post.data.title}</p>
-            <p class='recent-post-subtitle'>
-              <Icon name="solar:calendar-minimalistic-bold" />
-              {new Date(post.data.date).toDateString()}
-            </p>
-            <p class='recent-post-subtitle'>
-              <Icon name="solar:user-rounded-bold" />
-              {post.data.author}
-            </p>
-            <p class='recent-post-description'>{post.data.description}</p>
-            <a class='recent-post-link' href={`/blog/${post.slug}`}>
-              Read More...
+            <a href={`/blog/${post.slug}`}>
+              <p class='recent-post-title'>{post.data.title}</p>
+              <p class='recent-post-subtitle'>
+                <Icon name="solar:calendar-minimalistic-bold" />
+                {new Date(post.data.date).toDateString()}
+              </p>
+              <p class='recent-post-subtitle'>
+                <Icon name="solar:user-rounded-bold" />
+                {post.data.author}
+              </p>
+              <p class='recent-post-description'>{post.data.description}</p>
             </a>
           </div>
         ))}
@@ -55,16 +54,19 @@ recent_posts = recent_posts.sort((a, b) => b.data.date - a.data.date).slice(0, 3
 </Layout>
 
 <style>
+  div.recent-post {
+    @apply bg-white border-2 border-green-800/10 hover:border-green-800/30 p-4 rounded-md drop-shadow-lg my-4;
+  }
+  div.recent-post a {
+    @apply no-underline opacity-100;
+  }
   p.recent-post-title {
-    @apply font-semibold m-0 mt-4;
+    @apply font-semibold text-rose-800;
   }
   p.recent-post-subtitle {
-    @apply font-semibold text-sm text-gray-600/80 m-0 flex gap-x-2 items-center;
+    @apply font-semibold text-sm text-gray-600 m-0 flex gap-x-2 items-center;
   }
   p.recent-post-description {
     @apply text-sm text-gray-800 mx-0 my-2;
-  }
-  a.recent-post-link {
-    @apply m-0 underline text-sm text-center text-gray-800/80 hover:text-gray-800;
   }
 </style>

@@ -15,6 +15,9 @@ h3 {
 h1.home-header {
   @apply text-green-800/80 border-b-8 border-green-800/10 text-left text-3xl md:text-4xl;
 }
+h2.home-header {
+  @apply text-green-800/80 border-b-4 border-green-800/10 text-left text-lg md:text-xl;
+}
 
 main a {
   @apply underline opacity-80 hover:opacity-100;

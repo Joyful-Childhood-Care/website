@@ -14,23 +14,19 @@ blog.sort((a, b) => b.data.date - a.data.date);
     <h1>Blog</h1>
 
     {blog.map((b) => (
-      <div class="max-w-3xl mx-auto my-8 bg-gray-200/20 hover:bg-gray-200/40 border border-gray-200 shadow-sm rounded-md p-4">
-        <h2 class="mt-0 text-rose-800">{b.data.title}</h2>
-        <div class="flex items-center gap-x-2 opacity-70">
-          <Icon name="solar:calendar-minimalistic-bold" />
-          <p class="font-semibold">{new Date(b.data.date).toDateString()}</p>
-        </div>
-        <div class="flex items-center gap-x-2 opacity-70">
-          <Icon name="solar:user-rounded-bold" />
-          <p class="font-semibold">{b.data.author}</p>
-        </div>
-        <p class="mt-2 mb-4">{b.data.description}</p>
-        <div class="text-right">
-          <a href={`/blog/${b.slug}`} class="btn btn-amber">
-            <p>Read More</p>
-            <Icon name="solar:alt-arrow-right-bold" />
-          </a>
-        </div>
+      <div class="max-w-3xl mx-auto my-8 bg-white border-2 border-green-800/10 hover:border-green-800/30 p-4 rounded-md drop-shadow-lg">
+        <a href={`/blog/${b.slug}`} class="no-underline opacity-100">
+          <h2 class="mt-0 text-rose-800">{b.data.title}</h2>
+          <div class="flex items-center gap-x-2 opacity-70">
+            <Icon name="solar:calendar-minimalistic-bold" />
+            <p class="font-semibold">{new Date(b.data.date).toDateString()}</p>
+          </div>
+          <div class="flex items-center gap-x-2 opacity-70">
+            <Icon name="solar:user-rounded-bold" />
+            <p class="font-semibold">{b.data.author}</p>
+          </div>
+          <p class="mt-2 mb-4">{b.data.description}</p>
+        </a>
       </div>
     ))}
   </div>

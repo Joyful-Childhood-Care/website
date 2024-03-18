@@ -23,10 +23,10 @@ const projects = await getCollection('projects', ({ data }) => {
 
 <style>
   .project {
-    @apply bg-gray-200/40 border hover:bg-gray-200/80 border-gray-300/40 p-4 rounded-md;
+    @apply bg-gray-200/40 border-2 border-gray-300/40 hover:border-gray-300 p-4 rounded-md;
   }
   .project a {
-    @apply no-underline;
+    @apply no-underline opacity-100;
   }
   .title {
     @apply text-rose-800 font-semibold;
