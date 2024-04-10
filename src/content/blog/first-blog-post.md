@@ -1,12 +1,12 @@
 ---
-title: "Nurturing Talents: Visit to the winners of Women and Girls in Science
-  Quiz Competition "
+title: "Nurturing Talents: Visit to the winners of the International Day of
+  Women and Girls in Science Quiz Competition "
 author: Joyful Childhood Care Foundation
 date: 2024-02-20T17:54:38-05:00
 description: A visit to Methodist High School, Oboro.
 draft: true
 ---
-We are delighted to announce our visit to the Women and Girls in Science Quiz Competition winners in recognition of their outstanding performance. The 2024 Women and Girls in Science Day was held at the National Root Crops Research Institute library complex, Umudike Abia State, Nigeria. The talented students from Methodist High School Oboro in Ikwuano Local Government Area of Abia State displayed incomparable knowledge and passion for science, hence their well-deserved award. We are impressed by their performance and dedication to learning in science. The winners were visited in their schools to honor their remarkable achievements and to cheer them up.
+We are delighted to announce our visit to the Women and Girls in Science Quiz Competition winners in recognition of their outstanding performance. The 2024 International Day of Women and Girls in Science was held at the National Root Crops Research Institute library complex, Umudike Abia State, Nigeria. The talented students from Methodist High School Oboro in Ikwuano Local Government Area of Abia State displayed incomparable knowledge and passion for science, hence their well-deserved award. We are impressed by their performance and dedication to learning in science. The winners were visited in their schools to honor their remarkable achievements and to cheer them up.
 
 ![](/images/whatsapp-image-2024-03-25-at-11.27.20-am-2-.jpeg)
 
