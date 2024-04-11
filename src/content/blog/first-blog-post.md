@@ -8,7 +8,9 @@ draft: true
 ---
 We are delighted to announce our visit to the Women and Girls in Science Quiz Competition winners in recognition of their outstanding performance. The 2024 International Day of Women and Girls in Science was held at the National Root Crops Research Institute library complex, Umudike Abia State, Nigeria. The talented students from Methodist High School Oboro in Ikwuano Local Government Area of Abia State displayed incomparable knowledge and passion for science, hence their well-deserved award. We are impressed by their performance and dedication to learning in science. The winners were visited in their schools to honor their remarkable achievements and to cheer them up.
 
-![](/images/whatsapp-image-2024-03-25-at-11.27.20-am-2-.jpeg)
+
+
+
 
 ![](/images/whatsapp-image-2024-03-25-at-11.39.40-am-1-.jpeg) Joyful Childhood representatives at Methodist High School
 
