@@ -3,7 +3,7 @@ title: "A Joyful Beginning:   A Visit to Welcome a set of Triplets in Umudike"
 author: Joyful Childhood Care Foundation
 date: 2024-03-12T19:22:14-04:00
 description: "A visit of a set of triplets in Umudike  Abia State,  Nigeria. "
-draft: true
+draft: false
 ---
 Joyful Childhood Care Foundation (JCCF) had the privilege of visiting a family blessed with newborn triplets in Umudike, Ikwuano Local Government Area of Abia State, Nigeria. The purpose of the visit was to share the joy with them by supporting the family and celebrating the babies' arrival. JCCF representatives were excited at the sight of these precious bundles of joy. 
 
