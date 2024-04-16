@@ -13,10 +13,12 @@ cms_collections.forEach((c) => {
     let n = f.name;
     let w = f.widget;
     let v;
+    console.log(f);
     if ( w === 'string' ) v = z.string();
     if ( w === 'datetime' ) v = z.date();
     if ( w === 'boolean' ) v = z.boolean();
     if ( w === 'select' ) v = z.string();
+    if ( w === 'list' ) v = z.string().array();
     if ( v && n !== 'body' ) s[n] = v;
   });
 

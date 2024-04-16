@@ -1,0 +1,39 @@
+---
+import { getCollection } from "astro:content";
+import Layout from '../../layouts/Layout.astro';
+import BlogListing from '../../components/blog/listing.astro';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+
+  const posts_by_tag = {};
+  posts.forEach((p) => {
+    p.data.tags.forEach((t) => {
+      if ( !posts_by_tag.hasOwnProperty(t) ) posts_by_tag[t] = [];
+      posts_by_tag[t].push(p);
+    });
+  });
+
+  return Object.keys(posts_by_tag).map(tag => {
+    return {
+      params: { tag },
+      props: { posts: posts_by_tag[tag], tag }
+    }
+  });
+}
+
+const { posts, tag } = Astro.props;
+---
+
+<Layout title="Blog">
+  <div class="page px-4">
+    <h1>Blog</h1>
+
+    <div class="flex flex-col gap-2 items-center bg-gray-200 rounded-md p-4 w-fit mx-auto">
+      <p>Showing posts with tag: <strong>#{tag}</strong></p>
+      <a href="/blog">View all blog posts</a>
+    </div>
+
+    <BlogListing posts={posts} />
+  </div>
+</Layout>
