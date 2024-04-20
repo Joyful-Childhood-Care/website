@@ -5,23 +5,28 @@ const { posts } = Astro.props;
 ---
 
 {posts.map((p) => (
-  <div class="max-w-3xl mx-auto my-8 bg-white border-2 border-green-800/10 hover:border-green-800/30 p-4 rounded-md drop-shadow-lg">
-    <a href={`/blog/${p.slug}`} class="no-underline opacity-100">
-      <h2 class="mt-0 text-rose-800">{p.data.title}</h2>
-      <div class="flex items-center gap-x-2 opacity-70">
-        <Icon name="solar:calendar-minimalistic-bold" />
-        <p class="font-semibold">{new Date(p.data.date).toDateString()}</p>
+  <div class="max-w-3xl mx-auto my-8 bg-white border-2 border-green-800/10 hover:border-green-800/30 rounded-md drop-shadow-lg">
+    <div class="flex flex-col sm:flex-row flex-nowrap">
+      <div class="p-4">
+        <a href={`/blog/${p.slug}`} class="no-underline opacity-100">
+          <h2 class="mt-0 text-rose-800">{p.data.title}</h2>
+          <div class="flex items-center gap-x-2 opacity-70">
+            <Icon name="solar:calendar-minimalistic-bold" />
+            <p class="font-semibold">{new Date(p.data.date).toDateString()}</p>
+          </div>
+          <div class="flex items-center gap-x-2 opacity-70">
+            <Icon name="solar:user-rounded-bold" />
+            <p class="font-semibold">{p.data.author}</p>
+          </div>
+          <p class="my-2">{p.data.description}</p>
+        </a>
+        <div class="flex flex-wrap items-center justify-start gap-2">
+          {p.data.tags.map((t) => (
+            <a href={`/tags/${t}`}>#{t}</a>
+          ))}
+        </div>
       </div>
-      <div class="flex items-center gap-x-2 opacity-70">
-        <Icon name="solar:user-rounded-bold" />
-        <p class="font-semibold">{p.data.author}</p>
-      </div>
-      <p class="my-2">{p.data.description}</p>
-    </a>
-    <div class="flex items-center justify-start gap-2">
-      {p.data.tags.map((t) => (
-        <a href={`/tags/${t}`}>#{t}</a>
-      ))}
+      <img src={p.data.cover} class="h-100vh w-full sm:w-72 object-cover rounded-b-md sm:rounded-bl-none sm:rounded-r-md" />
     </div>
   </div>
 ))}

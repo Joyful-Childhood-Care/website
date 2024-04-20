@@ -48,7 +48,8 @@
       { "label": "Author", "name": "author", "widget": "string" },
       { "label": "Date", "name": "date", "widget": "datetime" },
       { "label": "Description", "name": "description", "widget": "string" },
-      { "label": "Tags", "name": "tags", "widget": "list" },
+      { "label": "Cover Photo", "name": "cover", "widget": "image", "allow_mutliple": false, "required": false },
+      { "label": "Tags", "name": "tags", "widget": "list", "required": false },
       { "label": "Draft", "name": "draft", "widget": "boolean" },
       { "label": "Body", "name": "body", "widget": "markdown" }
     ]

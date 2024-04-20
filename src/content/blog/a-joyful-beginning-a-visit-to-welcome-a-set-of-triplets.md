@@ -3,6 +3,7 @@ title: "A Joyful Beginning: A Visit to Welcome a set of Triplets in Umudike"
 author: Joyful Childhood Care Foundation
 date: 2024-04-13T09:33:53-04:00
 description: "A visit of a set of triplets in Umudike Abia State, Nigeria. "
+cover: /images/whatsapp-image-2024-03-25-at-8.58.59-am.jpeg
 tags:
   - triplets
   - joyfulbeginning

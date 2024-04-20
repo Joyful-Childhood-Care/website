@@ -4,6 +4,7 @@ title: "Nurturing Talents: Visit to the winners of the International Day of
 author: Joyful Childhood Care Foundation
 date: 2024-02-20T17:54:38-05:00
 description: A visit to Methodist High School, Oboro.
+cover: /images/whatsapp-image-2024-03-25-at-11.31.26-am.jpeg
 tags:
   - nurturingtalents
   - inspiringwinners
