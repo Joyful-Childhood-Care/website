@@ -28,6 +28,7 @@ const { data: { value:hostname } } = await getEntry('settings', 'hostname');
 <Layout title={blog.data.title}>
 
   <!-- OG tags for head -->
+  <meta slot="meta" property="og:url" content={hostname + '/blog/' + blog.slug} />
   <meta slot="meta" property="og:title" content={blog.data.title} />
   <meta slot="meta" property="og:description" content={blog.data.description} />
   <meta slot="meta" property="og:image" content={hostname + blog.data.cover} />
