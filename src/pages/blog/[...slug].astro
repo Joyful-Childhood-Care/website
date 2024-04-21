@@ -1,5 +1,5 @@
 ---
-import { getCollection } from 'astro:content';
+import { getCollection, getEntry } from 'astro:content';
 import { Icon } from 'astro-icon/components';
 import Layout from '../../layouts/Layout.astro';
 
@@ -21,11 +21,24 @@ let recent_posts = await getCollection('blog', ({ data }) => {
   return (import.meta.env.PROD ? data.draft !== true : true) && data.title !== blog.data.title;
 });
 recent_posts = recent_posts.sort((a, b) => b.data.date - a.data.date).slice(0, 3);
+
+const { data: { value:hostname } } = await getEntry('settings', 'hostname');
 ---
 
 <Layout title={blog.data.title}>
+
+  <!-- OG tags for head -->
+  <meta slot="meta" property="og:title" content={blog.data.title} />
+  <meta slot="meta" property="og:description" content={blog.data.description} />
+  <meta slot="meta" property="og:image" content={hostname + blog.data.cover} />
+  <meta slot="meta" property="og:type" content="article" />
+
   <div class="page">
     <h1 class="blog-title">{blog.data.title}</h1>
+    <h2 class="blog-date flex items-center gap-x-2">
+      <Icon name="solar:calendar-minimalistic-bold" class="opacity-70" />
+      <span>{new Date(blog.data.date).toDateString()}</span>
+    </h2>
     <div class="flex flex-col md:flex-row mt-8">
       <div class="content grow mt-4">
         <Content />
@@ -63,7 +76,10 @@ recent_posts = recent_posts.sort((a, b) => b.data.date - a.data.date).slice(0, 3
 
 <style>
   h1.blog-title {
-    @apply drop-shadow-md p-4;
+    @apply drop-shadow-md p-4 mb-0 text-3xl text-rose-800;
+  }
+  h2.blog-date {
+    @apply mx-auto w-fit mt-0 text-xl opacity-60;
   }
 
   div.recent-post {
