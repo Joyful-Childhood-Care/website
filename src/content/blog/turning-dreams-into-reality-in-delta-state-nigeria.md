@@ -8,7 +8,7 @@ tags:
   - "#joyfulvisit"
 draft: true
 ---
-Joyful, Childhood Care Foundation is overjoyed to announce the incredible milestone achieved in Delta State, Nigeria. Through our relentless efforts to foster opportunity for the vulnerable in communities, we have empowered a young woman in Delta state to start a profession and be independent. She was provided with the necessary hairdressing equipment and her own salon. 
+Joyful Childhood Care Foundation is overjoyed to announce the incredible milestone achieved in Delta State, Nigeria. Through our relentless efforts to foster opportunity for the vulnerable in communities, we have empowered a young woman in Delta state to start a profession and be independent. She was provided with the necessary hairdressing equipment and her own salon. 
 
 ![](/images/amaka_saloon_equipment.jpg)
 
