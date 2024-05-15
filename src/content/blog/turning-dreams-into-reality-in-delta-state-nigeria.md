@@ -18,7 +18,9 @@ It is not just about conducting training or providing the equipment; it is about
 
 Joyful Childhood Care Foundation is shattering barriers and turning dreams into reality by encouraging individuals and providing the resources they need to thrive and break free from the shackles of perpetuating poverty. We believe in the power of empowerment in creating an equitable society. We are paving the way for better futures by supporting the deprived in our communities. 
 
-![](/images/recipient-_of-saloon-equipt.jpg) A representative of the community and the girl’s widowed mother witnessed the presentation of the equipment.
+![](/images/recipient-_of-saloon-equipt.jpg)
+
+A representative of the community and the young lady's widowed mother witnessed the presentation of the equipment.
 
 Join us in congratulating the beneficiary, Miss Amaka Asa, for her passion and determination. We will monitor her progress and her testimonies and bring you updates.
 
