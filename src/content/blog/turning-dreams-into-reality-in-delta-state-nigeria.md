@@ -3,7 +3,7 @@ title: Turning Dreams into Reality in Delta State, Nigeria
 author: Joyful Childhood Care Foundation
 date: 2024-05-14T10:03:25
 description: Passion Meets Opportunity!
-cover: ""
+cover: /images/amaka_saloon_equipment-1-.jpg
 tags:
   - joyfulvisit
 draft: false
