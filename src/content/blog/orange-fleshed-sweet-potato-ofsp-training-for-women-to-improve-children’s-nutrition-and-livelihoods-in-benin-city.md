@@ -15,12 +15,13 @@ Hunger and malnutrition continue to impact millions of children in our society t
 
 To combat hunger and malnutrition among children in Nigeria, the Joyful Childhood Care Foundation (JCCF) sponsored an innovative training program for women in Benin City. This training was organized by Virginia Ijoma, a JCCF staff member and Corp member serving in Oredo, and was held at the Agricultural Development Project (ADP) office in Benin City. The resource persons were from the Women in Agriculture (WIA), National Root Crop Research Institute Umudike, Nigeria. The goal of the training is to equip women with the knowledge and skills needed to cultivate and add value to orange-fleshed sweet potatoes (OFSP), recognized for their nutritional benefits and potential to improve food security. This initiative reflects the Foundation’s commitment to addressing hunger, improving child nutrition, and enhancing living standards within the community.
 
-![](/images/whatsapp-image-2024-09-30-at-10.42.38-2-.jpeg)
+
+
+
 
 The program emphasized two key benefits of OFSP: its ability to combat vitamin A deficiency in children and its potential to generate income through value-added products. Participants engaged in hands-on sessions focused on OFSP cultivation and innovative processing methods. They learned to transform this versatile crop into nutritious and marketable products, including OFSP flour, drinks, and snacks such as bread, doughnuts, cakes, croquettes, strips, chin-chin, biscuits, and buns, as well as fortified meals. These child-friendly, value-added products are essential for improving child nutrition while simultaneously providing new economic opportunities for families.
 
-![](/images/whatsapp-image-2024-09-06-at-16.48.01.jpeg)  This training represents more than just farming and processing; it is about building a future where children can thrive without the threat of hunger or malnutrition.
+![](/images/whatsapp-image-2025-01-11-at-05.45.26.jpeg)
 
 
 
- Some of thhe products made during the workshop
