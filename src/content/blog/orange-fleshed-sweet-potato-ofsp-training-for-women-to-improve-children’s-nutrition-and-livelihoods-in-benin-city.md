@@ -6,7 +6,10 @@ date: 2025-01-14T21:31:45
 description: OFSP workshop
 cover: /images/whatsapp-image-2024-09-30-at-10.42.38-1-.jpeg
 tags:
-  - "#ofspworkshop #WIA #hiddenhunger #betternutrition"
+  - ofspworkshop
+  - WIA
+  - hiddenhunger
+  - betternutrition
 draft: false
 ---
 Hunger and malnutrition continue to impact millions of children in our society today. Vitamin A deficiency among children is a critical issue in Nigeria, as it leaves them vulnerable to severe illnesses from common childhood infections like diarrhoea and measles. In extreme cases, this deficiency can lead to blindness, and many children may die within a year of losing their sight. Fortunately, orange-fleshed sweet potato (OFSP) can provide up to 100% of a child's vitamin A needs. OFSP is a tropical root that is an exceptionally rich source of pro-vitamin A, proven to enhance children's growth and development. This versatile crop is easy to cook and consume, and it can also be processed into snacks and drinks of economic value, providing a potential source of income for families. By empowering mothers through skill acquisition, we can create a ripple effect that benefits families, communities, and society at large.
